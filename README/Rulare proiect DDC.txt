@@ -1,0 +1,57 @@
+compilare:
+ mvn clean install -DskipTests -Ppostgresql
+ mvn clean install -DskipTests -Pinfinispan
+
+run:
+ mvn clean compile spring-boot:run -DskipTests -Ppostgresql
+ mvn clean compile spring-boot:run -DskipTests -Pinfinispan
+
+Rulare:
+ bash startServices.sh postgresql
+ bash startServices.sh infinispan
+
+Creare imagine Kogito:
+ mvn clean install spring-boot:build-image -DskipTests -Ppostgresql
+ mvn clean install spring-boot:build-image -DskipTests -Pinfinispan
+
+
+### Package and Run
+
+```sh
+mvn clean package
+java -jar ./target/pmml-springboot-example.jar
+
+Creare container Docker:
+mvn clean compile spring-boot:build-image -DskipTests
+
+Realizare /target pentru Graphana:
+mvn clean package -DskipTests
+
+
+************************
+Windows:
+************************
+
+1. Se opresc toate containerele si se sterg
+2. Se sterge continutul directorului docker-compose/postgresql
+
+cd ddc-cle
+mvn clean install -DskipTests -Ppostgresql
+mvn clean install spring-boot:build-image -DskipTests -Ppostgresql
+cd docker-compose
+sh 
+./startServices_Win.sh postgresql
+
+
+************************
+Linux:
+************************
+
+1. Se opresc toate containerele si se sterg
+2. Se sterge continutul directorului docker-compose/postgresql
+
+cd ddc-cle
+mvn clean install -DskipTests -Ppostgresql
+mvn clean install spring-boot:build-image -DskipTests -Ppostgresql
+cd docker-compose
+bash startServices.sh postgresql

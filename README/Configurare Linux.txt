@@ -1,0 +1,8 @@
+1. Se intra in dfolderul docker-compose
+     cd docker-compose
+2. SE face fisierul startServices.sh executabil
+	sudo chmod +x install.sh
+3. Se executa fisierul
+	sudo ./startSerrvices.sh
+   sau
+	sudo bash startServices.sh

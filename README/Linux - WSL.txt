@@ -1,0 +1,111 @@
+Linux - drepturi scriere:
+sudo chown -R georgec252a //wsl.localhost/Ubuntu-22.04/home/georgec252a/Docker_Exemples/data-volumes-01-starting-setup
+
+Open browser in WSL:
+sensible-browser http://localhost:8001/
+export BROWSER='/mnt/c/Windows/explorer.exe'
+sudo apt-get update -y
+sudo apt-get install -y xdg-utils
+xdg-open https://superuser.com/
+
+Install NPM:
+npm install -g npm
+sudo apt-get install nodejs npm
+
+Install NVM
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
+nvm install 4.2.1
+
+Install nodeJs:
+$ sudo apt install nodejs
+$ curl -L https://npmjs.org/install.sh | sudo sh 
+
+Rulare Docker pe Linux:
+sudo docker run
+
+Install Docker:
+sudo amazon-linux-extras install docker
+
+Install Java:
+sudo apt-get install openjdk-8-jdk
+
+Configure JAVA_HOME
+$ readlink -f $(which java)
+vi ~/.bashrc
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+source ~/.bashrc
+~$ echo $JAVA_HOME
+
+MVNW permission denied:
+chmod +x mvnw
+
+Not able to execute a .sh file: /bin/bash^M: bad interpreter
+-Remove the CR characters
+sed -i -e 's/\r$//' create_mgw_3shelf_6xIPNI1P.sh
+
+Permission denied when running .sh scripts
+chmod +x the_file_name
+
+Instalare Java:
+1. sudo apt install openjdk-17-jdk
+2. 
+  wget https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_linux-x64_bin.tar.gz
+  tar -xvf openjdk-17.*
+  cd <directory_name>
+  sudo mkdir -p /usr/local/openjdk-17
+  sudo mv * /usr/local/openjdk-17
+  export JAVA_HOME=/usr/local/openjdk-17
+  export PATH=$JAVA_HOME/bin:$PATH
+  source ~/.bashrc
+
+Set Java_HOME
+  sudo apt install gedit
+  sudo gedit /etc/environment
+  Add lines: JAVA_HOME=/usr/lib/jvm/java-7-oracle
+	     export JAVA_HOME
+  Reload environment var: . /etc/environment
+
+
+Install maven:
+  sudo apt install mvn
+
+Delete file:
+sudo rm -rf directory
+
+
+Load Maven + Java :
+sudo gedit /etc/profile.d/maven.sh 
+---Write in opened file
+   export JAVA_HOME=/usr/lib/jvm/default-java
+   export M2_HOME=/opt/maven
+   export MAVEN_HOME=/opt/maven
+   export PATH=${M2_HOME}/bin:${PATH}
+-----
+
+sudo chmod +x /etc/profile.d/maven.sh
+source /etc/profile.d/maven.sh
+. /etc/environment
+
+
+Install gcloud:
+curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-427.0.0-linux-x86_64.tar.gz
+tar -xf google-cloud-cli-427.0.0-linux-x86.tar.gz
+./google-cloud-sdk/install.sh
+source '[path-to-my-home]/google-cloud-sdk/path.bash.inc
+source '[path-to-my-home]/google-cloud-sdk/completion.bash.inc'
+./google-cloud-sdk/bin/gcloud init
+
+Apply changes made in bash:
+source ~/.bashrc
+
+
+Selectare distributii pentru wsl
+wsl --list
+wsl --status
+wsl --setdefault Kali-linux
+
+Restart wsl
+Get-Service LxssManager | Restart-Service
+
+Run as admin PowerShell
+start-process powershell -verb runas

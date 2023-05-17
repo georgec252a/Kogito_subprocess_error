@@ -1,0 +1,18 @@
+1. Se completeaza in fisierul: C:\Windows\System32\drivers\etc\hosts
+        # Added by Docker Desktop
+	192.168.0.205 host.docker.internal
+	192.168.0.205 gateway.docker.internal
+	# To allow the same kube context to work on the host and the container:
+	127.0.0.1 kubernetes.docker.internal
+	# End of section
+
+2. Se tine cont ca pentru rularea in Windows sunt folosite urmatoarele fisiere:
+	startServices_Win.sh   
+		- fisier caruia i-au fost eliminate caracterele CR prin comanda:
+			sed -i -e 's/\r$//' create_mgw_3shelf_6xIPNI1P.sh
+	docker-compose-postgresql-win.yml
+		- fisier in care au fost inlocuite adresele de container cu host.docker.internal
+
+3. Pentru rulare script startServices_Win.sh:
+	a. se instaleaza sh prin instalarea pachetului cygwin
+	b. sh ./startServices_Win.sh

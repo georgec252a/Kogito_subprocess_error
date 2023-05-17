@@ -1,0 +1,33 @@
+mvn clean compile spring-boot:run -Dcheckstyle.skip=true
+
+mvn clean test
+
+http://localhost:8086/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
+
+allure run:
+allure serve target/allure-results
+
+
+Docker:
+
+mvn clean package -Ppostgresql
+mvn clean install -DskipTests -Pinfinispan
+
+docker-compose -f docker-compose-postgresql.yml up management-console
+docker-compose up 
+
+./startServices.sh postgresql
+ ./startServices.sh
+ ./startServices.sh infinispan 
+docker-compose -f docker-compose-postgresql.yml up
+
+Rulare Swagger
+http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
+
+
+Linux - drepturi scriere:
+sudo chown -R georgec252a //wsl.localhost/Ubuntu-22.04/home/georgec252a/Docker_Exemples/data-volumes-01-starting-setup
+
+
+Docker - Docker hub
+docker login

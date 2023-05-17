@@ -1,0 +1,5 @@
+Conectare ssh:
+ ssh -i "test.pem" ec2-user@ec2-18-223-241-126.us-east-2.compute.amazonaws.com
+
+sudo docker ps
+sudo docker run -d --rm -p 8086:8080 georgec252a/intrarecle

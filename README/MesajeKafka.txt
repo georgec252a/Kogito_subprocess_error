@@ -1,0 +1,13 @@
+{"specversion": "0.3","id": "21627e26-31eb-43e7-8343-92a696fd96b1","source": "","type": "travellers","data": { "firstName" : "Jan", "lastName" : "Kowalski", "email" : "jan.kowalski@example.com", "nationality" : "Polish"}}
+
+{"specversion": "0.3","id": "31627e26-31eb-43e7-8343-92a696fd96b1","source": "","type": "travellers","data": { "firstName" : "John", "lastName" : "Doe", "email" : "john.doe@example.com", "nationality" : "American"}}
+
+intrareCle:
+{"stored": true,"intrareCLE": {"marcaSofer": "12345678","vin": "12345678901234567","contDestinatar": "contDestinatar","tara": "tara","zona": "indirect","utilizator": "KIOSK","locuriLibere":2,"amplasament":"amplasament2","du": "vid","taraDestinatie": "Romania","modelVehicul":"model","plata": 1111}}
+
+ROLH111457.corp.noxiane.net:9092
+
+Rulare Kafka:
+ docker exec kafka --it sh
+citeste mesaje: bin/kafka-console-consumer.sh --bootstrap-server kafka:29092 --topic processedtravellers
+trimite mesaje: bin/kafka-console-producer.sh --broker-list kafka:9092 --topic travellers

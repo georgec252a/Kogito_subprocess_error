@@ -1,0 +1,372 @@
+georgec252a@ROLH111457:/wsl.localhost/Ubuntu-22.04/home/georgec252a/Kogito/ddc-cle/ddc-cle_postgresql$ mvn dependency:tree
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.kie.kogito.examples:process-postgresql-persistence-springboot:jar:1.35.0.Final
+[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 10850, column 24
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 5.15
+[INFO] os.detected.version.major: 5
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 22.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] 
+[INFO] --< org.kie.kogito.examples:process-postgresql-persistence-springboot >--
+[INFO] Building Kogito Example :: Process PostgreSQL Persistence Spring Boot 1.35.0.Final
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:2.8:tree (default-cli) @ process-postgresql-persistence-springboot ---
+[WARNING] Parameter 'localRepository' is deprecated core expression; Avoid use of ArtifactRepository type. If you need access to local repository, switch to '${repositorySystemSession}' expression and get LRM from it instead.
+[INFO] org.kie.kogito.examples:process-postgresql-persistence-springboot:jar:1.35.0.Final
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.6.6:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.6.6:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.6.6:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.6.6:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.6.6:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.9:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.9:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.17.2:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.36:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.31:compile
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.6.6:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-actuator:jar:2.6.6:compile
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.10.2:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.12:runtime
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] +- org.kie.kogito:kogito-processes-spring-boot-starter:jar:1.35.0.Final:compile
+[INFO] |  +- org.kie.kogito:jbpm-bpmn2:jar:1.35.0.Final:compile
+[INFO] |  |  +- org.kie.kogito:jbpm-flow-builder:jar:1.35.0.Final:compile
+[INFO] |  |  |  \- com.github.javaparser:javaparser-core:jar:3.24.2:compile
+[INFO] |  |  \- org.kie:kie-dmn-feel:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.antlr:antlr4-runtime:jar:4.10.1:compile
+[INFO] |  |     \- ch.obermuhlner:big-math:jar:2.0.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.6.6:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.6.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.14.1:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.14.1:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.6.6:compile
+[INFO] |  |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.60:compile
+[INFO] |  |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.60:compile
+[INFO] |  |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.60:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.3.18:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.3.18:compile
+[INFO] |  +- javax.xml.bind:jaxb-api:jar:2.3.1:compile
+[INFO] |  |  \- javax.activation:javax.activation-api:jar:1.2.0:compile
+[INFO] |  +- com.sun.activation:javax.activation:jar:1.2.0:compile
+[INFO] |  +- io.swagger.core.v3:swagger-annotations:jar:2.2.7:compile
+[INFO] |  \- org.springdoc:springdoc-openapi-ui:jar:1.6.14:compile
+[INFO] |     +- org.springdoc:springdoc-openapi-webmvc-core:jar:1.6.14:compile
+[INFO] |     |  \- org.springdoc:springdoc-openapi-common:jar:1.6.14:compile
+[INFO] |     |     \- io.swagger.core.v3:swagger-core:jar:2.2.7:compile
+[INFO] |     |        +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.14.1:compile
+[INFO] |     |        +- io.swagger.core.v3:swagger-models:jar:2.2.7:compile
+[INFO] |     |        \- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile
+[INFO] |     +- org.webjars:swagger-ui:jar:4.15.5:compile
+[INFO] |     +- org.webjars:webjars-locator-core:jar:0.48:compile
+[INFO] |     \- io.github.classgraph:classgraph:jar:4.8.149:compile
+[INFO] +- org.kie.kogito:kogito-api:jar:1.35.0.Final:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- org.kie:kie-api:jar:8.35.0.Final:compile
+[INFO] |  +- io.cloudevents:cloudevents-api:jar:2.3.0:compile
+[INFO] |  +- org.drools:drools-ruleunits-api:jar:8.35.0.Final:compile
+[INFO] |  |  \- org.kie:kie-internal:jar:8.35.0.Final:compile
+[INFO] |  +- org.kie:kie-dmn-api:jar:8.35.0.Final:compile
+[INFO] |  |  +- org.kie:efesto-common-api:jar:8.35.0.Final:compile
+[INFO] |  |  |  \- org.kie:kie-memory-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  \- org.kie:kie-dmn-model:jar:8.35.0.Final:compile
+[INFO] |  +- org.kie.kogito:kogito-timer:jar:1.35.0.Final:compile
+[INFO] |  \- org.kie.kogito:kogito-pmml-api-dependencies:jar:1.35.0.Final:compile
+[INFO] |     +- org.kie:kie-pmml-evaluator-api:jar:8.35.0.Final:compile
+[INFO] |     |  \- org.kie:kie-pmml-api:jar:8.35.0.Final:compile
+[INFO] |     |     \- org.apache.commons:commons-math3:jar:3.4.1:compile
+[INFO] |     \- org.kie:kie-pmml-commons:jar:8.35.0.Final:compile
+[INFO] |        \- org.apache.commons:commons-text:jar:1.10.0:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.6.6:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.6.6:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.6.6:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.6.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.4.8:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:2.4.8:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:9.1:test
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO] |  +- org.assertj:assertj-core:jar:3.22.0:test
+[INFO] |  +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO] |  +- org.junit.jupiter:junit-jupiter:jar:5.9.1:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-api:jar:5.9.1:test
+[INFO] |  |  |  +- org.opentest4j:opentest4j:jar:1.2.0:test
+[INFO] |  |  |  \- org.junit.platform:junit-platform-commons:jar:1.9.1:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-params:jar:5.9.1:test
+[INFO] |  |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:4.11.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.12.18:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.11.22:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:3.3:test
+[INFO] |  +- org.mockito:mockito-junit-jupiter:jar:4.11.0:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.3.18:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.3.18:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.3.18:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.8.4:test
+[INFO] +- io.rest-assured:rest-assured:jar:4.4.0:test
+[INFO] |  +- org.codehaus.groovy:groovy:jar:3.0.10:test
+[INFO] |  +- org.codehaus.groovy:groovy-xml:jar:3.0.10:test
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.13:test
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.15:test
+[INFO] |  |  \- commons-codec:commons-codec:jar:1.15:compile
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.5.13:test
+[INFO] |  +- org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:test
+[INFO] |  +- io.rest-assured:json-path:jar:4.4.0:test
+[INFO] |  |  +- org.codehaus.groovy:groovy-json:jar:3.0.10:test
+[INFO] |  |  \- io.rest-assured:rest-assured-common:jar:4.4.0:test
+[INFO] |  \- io.rest-assured:xml-path:jar:4.4.0:test
+[INFO] |     \- com.sun.xml.bind:jaxb-impl:jar:2.3.5:test
+[INFO] +- org.kie.kogito:kogito-spring-boot-test-utils:jar:1.35.0.Final:test
+[INFO] |  +- org.kie.kogito:kogito-test-utils:jar:1.35.0.Final:test
+[INFO] |  |  +- org.testcontainers:testcontainers:jar:1.17.3:test
+[INFO] |  |  |  +- org.apache.commons:commons-compress:jar:1.21:test
+[INFO] |  |  |  +- org.rnorth.duct-tape:duct-tape:jar:1.0.8:test
+[INFO] |  |  |  |  \- org.jetbrains:annotations:jar:17.0.0:test
+[INFO] |  |  |  +- com.github.docker-java:docker-java-api:jar:3.2.13:test
+[INFO] |  |  |  \- com.github.docker-java:docker-java-transport-zerodep:jar:3.2.13:test
+[INFO] |  |  |     +- com.github.docker-java:docker-java-transport:jar:3.2.13:test
+[INFO] |  |  |     \- net.java.dev.jna:jna:jar:5.8.0:test
+[INFO] |  |  +- org.testcontainers:junit-jupiter:jar:1.17.3:test
+[INFO] |  |  +- org.testcontainers:kafka:jar:1.17.3:test
+[INFO] |  |  +- org.testcontainers:mongodb:jar:1.17.3:test
+[INFO] |  |  +- org.testcontainers:postgresql:jar:1.17.3:test
+[INFO] |  |  +- org.testcontainers:jdbc:jar:1.17.3:test
+[INFO] |  |  +- org.testcontainers:oracle-xe:jar:1.17.3:test
+[INFO] |  |  +- com.oracle.database.jdbc:ojdbc11:jar:21.3.0.0:test
+[INFO] |  |  \- org.testcontainers:database-commons:jar:1.17.3:test
+[INFO] |  \- org.apache.kafka:kafka-clients:jar:3.0.1:compile
+[INFO] |     +- com.github.luben:zstd-jni:jar:1.5.0-2:runtime
+[INFO] |     +- org.lz4:lz4-java:jar:1.7.1:runtime
+[INFO] |     \- org.xerial.snappy:snappy-java:jar:1.1.8.1:runtime
+[INFO] +- org.kie.kogito:kogito-addons-springboot-events-process-kafka:jar:1.35.0.Final:compile
+[INFO] |  \- org.kie.kogito:kogito-events-api:jar:1.35.0.Final:compile
+[INFO] |     \- io.cloudevents:cloudevents-core:jar:2.3.0:compile
+[INFO] +- org.kie.kogito:kogito-addons-springboot-process-svg:jar:1.35.0.Final:compile
+[INFO] |  +- org.kie.kogito:kogito-addons-process-svg:jar:1.35.0.Final:compile
+[INFO] |  |  \- org.apache.xmlgraphics:batik-anim:jar:1.14:compile
+[INFO] |  |     +- org.apache.xmlgraphics:batik-awt-util:jar:1.14:compile
+[INFO] |  |     |  \- org.apache.xmlgraphics:xmlgraphics-commons:jar:2.6:compile
+[INFO] |  |     |     +- commons-io:commons-io:jar:1.3.1:compile
+[INFO] |  |     |     \- commons-logging:commons-logging:jar:1.0.4:compile
+[INFO] |  |     +- org.apache.xmlgraphics:batik-css:jar:1.14:compile
+[INFO] |  |     +- org.apache.xmlgraphics:batik-dom:jar:1.14:compile
+[INFO] |  |     |  +- org.apache.xmlgraphics:batik-xml:jar:1.14:compile
+[INFO] |  |     |  +- xalan:xalan:jar:2.7.2:compile
+[INFO] |  |     |  |  \- xalan:serializer:jar:2.7.2:compile
+[INFO] |  |     |  \- xml-apis:xml-apis:jar:1.4.01:compile
+[INFO] |  |     +- org.apache.xmlgraphics:batik-ext:jar:1.14:compile
+[INFO] |  |     +- org.apache.xmlgraphics:batik-parser:jar:1.14:compile
+[INFO] |  |     +- org.apache.xmlgraphics:batik-shared-resources:jar:1.14:compile
+[INFO] |  |     +- org.apache.xmlgraphics:batik-svg-dom:jar:1.14:compile
+[INFO] |  |     +- org.apache.xmlgraphics:batik-util:jar:1.14:compile
+[INFO] |  |     |  +- org.apache.xmlgraphics:batik-constants:jar:1.14:compile
+[INFO] |  |     |  \- org.apache.xmlgraphics:batik-i18n:jar:1.14:compile
+[INFO] |  |     \- xml-apis:xml-apis-ext:jar:1.3.04:compile
+[INFO] |  +- org.kie.kogito:kogito-spring-boot-starter:jar:1.35.0.Final:compile
+[INFO] |  |  +- org.kie.kogito:kogito-rules-spring-boot-starter:jar:1.35.0.Final:compile
+[INFO] |  |  +- org.kie.kogito:kogito-decisions-spring-boot-starter:jar:1.35.0.Final:compile
+[INFO] |  |  \- org.kie.kogito:kogito-predictions-spring-boot-starter:jar:1.35.0.Final:compile
+[INFO] |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.14.1:compile
+[INFO] +- org.kie.kogito:kogito-addons-springboot-process-management:jar:1.35.0.Final:compile
+[INFO] |  +- org.kie.kogito:kogito-addons-process-management:jar:1.35.0.Final:compile
+[INFO] |  |  \- org.kie.kogito:jbpm-flow:jar:1.35.0.Final:compile
+[INFO] |  |     +- org.kie.kogito:kogito-services:jar:1.35.0.Final:compile
+[INFO] |  |     +- org.kie.kogito:process-workitems:jar:1.35.0.Final:compile
+[INFO] |  |     \- com.github.javaparser:javaparser-symbol-solver-core:jar:3.24.2:compile
+[INFO] |  |        +- org.javassist:javassist:jar:3.28.0-GA:compile
+[INFO] |  |        \- com.google.guava:guava:jar:31.1-jre:compile
+[INFO] |  |           +- com.google.guava:failureaccess:jar:1.0.1:compile
+[INFO] |  |           +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |           +- org.checkerframework:checker-qual:jar:3.12.0:compile
+[INFO] |  |           +- com.google.errorprone:error_prone_annotations:jar:2.11.0:compile
+[INFO] |  |           \- com.google.j2objc:j2objc-annotations:jar:1.3:compile
+[INFO] |  \- org.kie.kogito:kogito-addons-springboot-rest-exception-handler:jar:1.35.0.Final:compile
+[INFO] |     \- org.kie.kogito:kogito-addons-rest-exception-handler:jar:1.35.0.Final:compile
+[INFO] +- org.springframework.kafka:spring-kafka:jar:2.8.4:compile
+[INFO] |  +- org.springframework:spring-context:jar:5.3.18:compile
+[INFO] |  |  +- org.springframework:spring-aop:jar:5.3.18:compile
+[INFO] |  |  +- org.springframework:spring-beans:jar:5.3.18:compile
+[INFO] |  |  \- org.springframework:spring-expression:jar:5.3.18:compile
+[INFO] |  +- org.springframework:spring-messaging:jar:5.3.18:compile
+[INFO] |  +- org.springframework:spring-tx:jar:5.3.18:compile
+[INFO] |  +- org.springframework.retry:spring-retry:jar:1.3.2:compile
+[INFO] |  \- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] +- org.kie.kogito:kogito-addons-springboot-messaging:jar:1.35.0.Final:compile
+[INFO] |  +- org.kie.kogito:kogito-addons-messaging:jar:1.35.0.Final:compile
+[INFO] |  |  \- org.kie.kogito:kogito-events-core:jar:1.35.0.Final:compile
+[INFO] |  |     +- io.cloudevents:cloudevents-json-jackson:jar:2.3.0:compile
+[INFO] |  |     \- org.kie.kogito:kogito-jackson-utils:jar:1.35.0.Final:compile
+[INFO] |  \- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-core:jar:2.14.1:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.14.1:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-annotations:jar:2.15.0-rc2:compile
+[INFO] +- javax:javaee-api:jar:7.0:compile
+[INFO] |  \- com.sun.mail:javax.mail:jar:1.5.0:compile
+[INFO] |     \- javax.activation:activation:jar:1.1:compile
+[INFO] +- org.projectlombok:lombok:jar:1.18.22:provided
+[INFO] +- io.qameta.allure:allure-testng:jar:2.13.8:compile
+[INFO] |  \- io.qameta.allure:allure-java-commons:jar:2.13.8:compile
+[INFO] |     +- io.qameta.allure:allure-model:jar:2.13.8:compile
+[INFO] |     +- org.apache.tika:tika-core:jar:1.24.1:runtime
+[INFO] |     \- org.jooq:joor-java-8:jar:0.9.13:runtime
+[INFO] +- io.qameta.allure:allure-rest-assured:jar:2.13.8:compile
+[INFO] |  \- io.qameta.allure:allure-attachments:jar:2.13.8:compile
+[INFO] |     \- org.freemarker:freemarker:jar:2.3.31:runtime
+[INFO] +- com.github.javafaker:javafaker:jar:1.0.2:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.12.0:compile
+[INFO] |  +- org.yaml:snakeyaml:jar:android:1.23:compile
+[INFO] |  \- com.github.mifmif:generex:jar:1.0.2:compile
+[INFO] |     \- dk.brics.automaton:automaton:jar:1.11-8:compile
+[INFO] +- org.kie.kogito:kogito-scenario-simulation:jar:1.35.0.Final:test
+[INFO] |  +- org.kie.kogito:kogito-dmn:jar:1.35.0.Final:compile
+[INFO] |  |  +- org.kie:kie-dmn-core:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:kie-dmn-backend:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.drools:drools-model-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.drools:drools-mvel-parser:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.drools:drools-alphanetwork-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:efesto-runtime-manager-core:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  \- org.kie:efesto-runtime-manager-api:jar:tests:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:efesto-common-utils:jar:8.35.0.Final:compile
+[INFO] |  |  |  \- org.jpmml:pmml-model:jar:1.5.1:compile
+[INFO] |  |  |     \- org.jpmml:pmml-agent:jar:1.5.1:compile
+[INFO] |  |  \- org.kie:kie-dmn-validation:jar:8.35.0.Final:compile
+[INFO] |  +- org.kie.kogito:kogito-pmml:jar:1.35.0.Final:compile
+[INFO] |  |  +- org.kie.kogito:kogito-pmml-dependencies:pom:1.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:kie-pmml-dependencies:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-compiler-api:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  |  \- org.glassfish.jaxb:jaxb-runtime:jar:2.3.6:compile
+[INFO] |  |  |  |  |     +- org.glassfish.jaxb:txw2:jar:2.3.6:compile
+[INFO] |  |  |  |  |     +- com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[INFO] |  |  |  |  |     \- com.sun.activation:jakarta.activation:jar:1.2.2:runtime
+[INFO] |  |  |  |  +- org.kie:kie-pmml-compiler-core:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-compiler-commons:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-evaluator-core:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-evaluator-utils:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-drools-common:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-regression-model:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-regression-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-regression-evaluator:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-mining-model:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-mining-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-mining-evaluator:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-clustering-model:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-pmml-models-clustering-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  \- org.kie:kie-pmml-models-clustering-evaluator:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:kie-pmml-models-drools-tree-model:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:kie-pmml-models-drools-tree-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:kie-pmml-models-drools-tree-evaluator:jar:8.35.0.Final:compile
+[INFO] |  |  |  |  \- org.kie:kie-pmml-compiler-api:jar:tests:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:kie-pmml-models-drools-scorecard-model:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:kie-pmml-models-drools-scorecard-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  |  \- org.kie:kie-pmml-models-drools-scorecard-evaluator:jar:8.35.0.Final:compile
+[INFO] |  |  +- org.kie.kogito:kogito-efesto-drl:pom:1.35.0.Final:compile
+[INFO] |  |  \- org.kie:efesto-dependencies:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.kie:efesto-common-core:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.kie:efesto-compilation-manager-api:jar:8.35.0.Final:compile
+[INFO] |  |     \- org.kie:efesto-runtime-manager-api:jar:8.35.0.Final:compile
+[INFO] |  +- org.kie:kie-drl-compilation-common:jar:8.35.0.Final:compile
+[INFO] |  |  +- org.kie:efesto-compilation-manager-core:jar:8.35.0.Final:compile
+[INFO] |  |  +- org.drools:drools-model-codegen:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.drools:drools-util:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.drools:drools-codegen-common:jar:8.35.0.Final:compile
+[INFO] |  |  |  \- org.drools:drools-mvel-compiler:jar:8.35.0.Final:compile
+[INFO] |  |  +- org.drools:drools-ruleunits-impl:jar:8.35.0.Final:compile
+[INFO] |  |  \- org.kie:kie-drl-api:jar:8.35.0.Final:compile
+[INFO] |  +- org.kie:kie-drl-map-input-runtime:jar:8.35.0.Final:compile
+[INFO] |  |  +- org.kie:kie-drl-runtime-common:jar:8.35.0.Final:compile
+[INFO] |  |  \- org.drools:drools-canonical-model:jar:8.35.0.Final:compile
+[INFO] |  +- org.drools:drools-mvel:jar:8.35.0.Final:compile
+[INFO] |  |  +- org.mvel:mvel2:jar:2.4.12.Final:compile
+[INFO] |  |  +- org.drools:drools-core:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.kie:kie-util-xml:jar:8.35.0.Final:compile
+[INFO] |  |  |  +- org.drools:drools-wiring-static:jar:8.35.0.Final:compile
+[INFO] |  |  |  \- org.drools:drools-io:jar:8.35.0.Final:compile
+[INFO] |  |  \- org.drools:drools-compiler:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.drools:drools-drl-parser:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.drools:drools-drl-extensions:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.drools:drools-drl-ast:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.drools:drools-kiesession:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.drools:drools-ecj:jar:8.35.0.Final:compile
+[INFO] |  |     +- org.kie:kie-util-maven-support:jar:8.35.0.Final:compile
+[INFO] |  |     \- org.antlr:antlr-runtime:jar:3.5.2:compile
+[INFO] |  +- org.kie.kogito:kogito-drools:jar:1.35.0.Final:compile
+[INFO] |  +- org.drools:drools-wiring-dynamic:jar:8.35.0.Final:compile
+[INFO] |  |  \- org.drools:drools-wiring-api:jar:8.35.0.Final:compile
+[INFO] |  +- org.junit.vintage:junit-vintage-engine:jar:5.9.1:test
+[INFO] |  |  +- org.junit.platform:junit-platform-engine:jar:1.9.1:test
+[INFO] |  |  +- junit:junit:jar:4.13.2:test
+[INFO] |  |  |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] |  +- org.drools:drools-scenario-simulation-api:jar:8.35.0.Final:test
+[INFO] |  |  \- com.thoughtworks.xstream:xstream:jar:1.4.20:compile
+[INFO] |  |     \- io.github.x-stream:mxparser:jar:1.2.2:compile
+[INFO] |  |        \- xmlpull:xmlpull:jar:1.1.3.1:compile
+[INFO] |  \- org.drools:drools-scenario-simulation-backend:jar:8.35.0.Final:test
+[INFO] |     \- org.drools:drools-commands:jar:8.35.0.Final:compile
+[INFO] +- org.testng:testng:jar:7.6.1:test
+[INFO] |  +- com.beust:jcommander:jar:1.82:test
+[INFO] |  \- org.webjars:jquery:jar:3.6.0:test
+[INFO] +- io.micrometer:micrometer-observation:jar:1.10.6:compile
+[INFO] |  \- io.micrometer:micrometer-commons:jar:1.10.6:compile
+[INFO] +- io.micrometer:micrometer-tracing-bridge-otel:jar:1.0.4:compile
+[INFO] |  +- io.micrometer:micrometer-tracing:jar:1.0.4:compile
+[INFO] |  |  +- io.micrometer:context-propagation:jar:1.0.2:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- io.opentelemetry:opentelemetry-api:jar:1.19.0:compile
+[INFO] |  |  \- io.opentelemetry:opentelemetry-context:jar:1.19.0:compile
+[INFO] |  +- io.opentelemetry:opentelemetry-extension-aws:jar:1.19.0:compile
+[INFO] |  +- io.opentelemetry:opentelemetry-semconv:jar:1.19.0-alpha:compile
+[INFO] |  +- io.opentelemetry:opentelemetry-sdk-common:jar:1.19.0:compile
+[INFO] |  +- io.opentelemetry:opentelemetry-sdk-trace:jar:1.19.0:compile
+[INFO] |  +- io.opentelemetry:opentelemetry-sdk:jar:1.19.0:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-metrics:jar:1.19.0:compile
+[INFO] |  |  \- io.opentelemetry:opentelemetry-sdk-logs:jar:1.19.0-alpha:runtime
+[INFO] |  |     \- io.opentelemetry:opentelemetry-api-logs:jar:1.19.0-alpha:runtime
+[INFO] |  +- io.opentelemetry.instrumentation:opentelemetry-instrumentation-api-semconv:jar:1.19.2-alpha:compile
+[INFO] |  |  \- io.opentelemetry.instrumentation:opentelemetry-instrumentation-api:jar:1.19.2:compile
+[INFO] |  \- io.opentelemetry:opentelemetry-extension-trace-propagators:jar:1.19.0:compile
+[INFO] +- io.opentelemetry:opentelemetry-exporter-zipkin:jar:1.25.0:compile
+[INFO] |  +- io.zipkin.reporter2:zipkin-reporter:jar:2.16.3:compile
+[INFO] |  |  \- io.zipkin.zipkin2:zipkin:jar:2.23.2:compile
+[INFO] |  +- io.opentelemetry:opentelemetry-exporter-common:jar:1.25.0:runtime
+[INFO] |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:jar:1.25.0:runtime
+[INFO] |  \- io.zipkin.reporter2:zipkin-sender-okhttp3:jar:2.16.3:runtime
+[INFO] |     \- com.squareup.okhttp3:okhttp:jar:3.14.9:runtime
+[INFO] |        \- com.squareup.okio:okio:jar:1.17.2:runtime
+[INFO] \- org.kie.kogito:kogito-addons-springboot-monitoring-prometheus:jar:1.35.0.Final:compile
+[INFO]    +- org.kie.kogito:kogito-addons-monitoring-prometheus:jar:1.35.0.Final:compile
+[INFO]    |  +- org.kie.kogito:kogito-addons-monitoring-core:jar:1.35.0.Final:compile
+[INFO]    |  |  \- org.kie.kogito:grafana-api:jar:1.35.0.Final:compile
+[INFO]    |  \- io.micrometer:micrometer-registry-prometheus:jar:1.10.2:compile
+[INFO]    |     \- io.prometheus:simpleclient_common:jar:0.12.0:compile
+[INFO]    |        \- io.prometheus:simpleclient:jar:0.12.0:compile
+[INFO]    |           +- io.prometheus:simpleclient_tracer_otel:jar:0.12.0:compile
+[INFO]    |           |  \- io.prometheus:simpleclient_tracer_common:jar:0.12.0:compile
+[INFO]    |           \- io.prometheus:simpleclient_tracer_otel_agent:jar:0.12.0:compile
+[INFO]    \- org.kie.kogito:kogito-addons-springboot-monitoring-core:jar:1.35.0.Final:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.204 s
+[INFO] Finished at: 2023-05-15T11:12:23+03:00
+[INFO] ------------------------------------------------------------------------
